@@ -2,6 +2,22 @@
 ![Total Lines](https://img.shields.io/tokei/lines/github/nelsontky/gh-pages-url-shortener?color=green)
 ![GitHub stars](https://img.shields.io/github/stars/nelsontky/gh-pages-url-shortener?style=social)
 
+# You can try it out [here](https://github.com/Rooyca/short-db) by opening a new issue with the url to be shortened.
+
+# Creare a new short URL by CLI
+
+## Requirements
+
+- Python 3.6+
+- [gitub-cli](https://cli.github.com/)
+
+## Usage
+
+- Clone this repo
+- Run `python cli/short.py <url>`
+
+---
+
 # 🔗 GitHub Pages URL Shortener
 
 This is a minimal URL shortener that can be entirely hosted on GitHub pages. It
