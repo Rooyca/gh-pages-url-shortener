@@ -2,11 +2,19 @@
 ![Total Lines](https://img.shields.io/tokei/lines/github/nelsontky/gh-pages-url-shortener?color=green)
 ![GitHub stars](https://img.shields.io/github/stars/nelsontky/gh-pages-url-shortener?style=social)
 
----
-> You can try it out [here](https://github.com/Rooyca/short-db) by opening a new issue with the url to be shortened.
----
 
-## Short URL by CLI
+> You can try it out [here](https://github.com/Rooyca/short-db) by opening a new issue with the url as title.
+>> Or more easily [https://yoo.lat/ghus](https://yoo.lat/ghus)
+
+## Shorten url from website
+
+### Demo
+- [https://yoo.lat/ghus](https://yoo.lat/ghus)
+  
+### About this
+- [https://github.com/Rooyca/short-url](https://github.com/Rooyca/short-url/blob/master/github/README.md)
+
+## Shorten url from CLI
 
 ### Requirements
 
