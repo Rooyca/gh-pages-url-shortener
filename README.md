@@ -9,7 +9,7 @@
 ## Shorten url from website
 
 ### Demo
-- [https://divine-sound-5320.fly.dev/](https://divine-sound-5320.fly.dev/)
+- [https://rooyca.github.io/short/34](https://rooyca.github.io/short/34)
   
 ### About this
 - [https://github.com/Rooyca/short-url](https://github.com/Rooyca/short-url/blob/master/github/README.md)
