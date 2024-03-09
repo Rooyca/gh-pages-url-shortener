@@ -4,12 +4,12 @@
 
 
 > You can try it out [here](https://github.com/Rooyca/short-db) by opening a new issue with the url as title.
->> Or more easily [https://yoo.lat/ghus](https://yoo.lat/ghus)
+>> Or more easily [https://divine-sound-5320.fly.dev/](https://divine-sound-5320.fly.dev/)
 
 ## Shorten url from website
 
 ### Demo
-- [https://yoo.lat/ghus](https://yoo.lat/ghus)
+- [https://divine-sound-5320.fly.dev/](https://divine-sound-5320.fly.dev/)
   
 ### About this
 - [https://github.com/Rooyca/short-url](https://github.com/Rooyca/short-url/blob/master/github/README.md)
