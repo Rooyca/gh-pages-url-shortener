@@ -24,6 +24,7 @@
 
       function redirect() {
         var location = window.location;
+        alert(location);
         var issueNumber = location.pathname.split("/")[
           PATH_SEGMENTS_TO_SKIP + 1
         ];
@@ -42,9 +43,12 @@
             var payload = JSON.parse(xhr.response);
             var message = payload.message;
             var title = payload.title;
+            alert(title);
+            alert(message);
 
             // Workaround IE 11 lack of support for new URL()
             var url = document.createElement("a");
+            alert(url);
             url.setAttribute("href", title);
 
             // Invalid URLs includes invalid issue numbers, issue titles that are not URLs, and recursive destination URLs
