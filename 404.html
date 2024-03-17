@@ -17,10 +17,7 @@
        */
       function isUrl(url) {
         // Regex from https://stackoverflow.com/a/3809435, with a modification to allow for TLDs of up to 24 characters
-        alert(/^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,24}(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?$/.test(url));
-        return /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,24}(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?$/.test(
-          url
-        );
+        return /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,24}(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?$/.test(url);
       }
 
       function redirect() {
@@ -43,7 +40,6 @@
             var payload = JSON.parse(xhr.response);
             var message = payload.message;
             var title = payload.title;
-            alert(title);
 
             // Workaround IE 11 lack of support for new URL()
             var url = document.createElement("a");
@@ -55,6 +51,7 @@
               !title ||
               !isUrl(title) ||
               url.hostname === location.hostname;
+            alert(isInvalidUrl);
 
             if (isInvalidUrl) {
               location.replace(homepage);
