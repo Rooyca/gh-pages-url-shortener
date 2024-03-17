@@ -51,7 +51,8 @@
               !title ||
               !isUrl(title) ||
               url.hostname === location.hostname;
-            alert(!isUrl(title));
+            alert(url.hostname);
+            alert(location.hostname);
             alert(url.hostname === location.hostname);
 
             if (isInvalidUrl) {
