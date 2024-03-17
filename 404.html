@@ -17,6 +17,7 @@
        */
       function isUrl(url) {
         // Regex from https://stackoverflow.com/a/3809435, with a modification to allow for TLDs of up to 24 characters
+        // /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,24}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)+$/
         return /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,24}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)+$/.test(
           url
         );
@@ -46,7 +47,9 @@
             // Workaround IE 11 lack of support for new URL()
             var url = document.createElement("a");
             // url.setAttribute("href", title);
-            url.setAttribute("href", encodeURIComponent(title));
+            var encodedTitle = encodeURIComponent(title);
+            url.setAttribute("href", encodedTitle);
+            url.textContent = encodedTitle;
 
             // Invalid URLs includes invalid issue numbers, issue titles that are not URLs, and recursive destination URLs
             var isInvalidUrl =
