@@ -45,7 +45,8 @@
 
             // Workaround IE 11 lack of support for new URL()
             var url = document.createElement("a");
-            url.setAttribute("href", title);
+            // url.setAttribute("href", title);
+            url.setAttribute("href", encodeURIComponent(title));
 
             // Invalid URLs includes invalid issue numbers, issue titles that are not URLs, and recursive destination URLs
             var isInvalidUrl =
@@ -57,7 +58,8 @@
             if (isInvalidUrl) {
               location.replace(homepage);
             } else {
-              location.replace(title);
+              // location.replace(title);
+              location.replace(decodeURIComponent(url.href));
             }
           } catch (e) {
             location.replace(homepage);
