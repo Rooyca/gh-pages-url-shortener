@@ -51,7 +51,8 @@
               !title ||
               !isUrl(title) ||
               url.hostname === location.hostname;
-            alert(isInvalidUrl);
+            alert(!isUrl(title));
+            alert(url.hostname === location.hostname);
 
             if (isInvalidUrl) {
               location.replace(homepage);
