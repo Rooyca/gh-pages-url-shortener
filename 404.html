@@ -17,14 +17,14 @@
        */
       function isUrl(url) {
         // Regex from https://stackoverflow.com/a/3809435, with a modification to allow for TLDs of up to 24 characters
-        return /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,24}(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?$/i.test(
+        alert(/^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,24}(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?$/.test(url));
+        return /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,24}(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?$/.test(
           url
         );
       }
 
       function redirect() {
         var location = window.location;
-        alert(location);
         var issueNumber = location.pathname.split("/")[
           PATH_SEGMENTS_TO_SKIP + 1
         ];
@@ -44,11 +44,9 @@
             var message = payload.message;
             var title = payload.title;
             alert(title);
-            alert(message);
 
             // Workaround IE 11 lack of support for new URL()
             var url = document.createElement("a");
-            alert(url);
             url.setAttribute("href", title);
 
             // Invalid URLs includes invalid issue numbers, issue titles that are not URLs, and recursive destination URLs
